@@ -219,7 +219,7 @@ export default {
       isvList: null, // 服务商下拉列表
       rules: {
         mchName: [{ required: true, message: '请输入商户名称', trigger: 'blur' }],
-        loginUserName: [{ required: true, pattern: /^[a-zA-Z][a-zA-Z0-9]{5,17}$/, message: '请输入字母开头，长度为6-18位的登录名', trigger: 'blur' }],
+        loginUserName: [{ required: true, pattern: /^[a-zA-Z][a-zA-Z0-9]{3,17}$/, message: '请输入字母开头，长度为4-18位的登录名', trigger: 'blur' }],
         mchShortName: [{ required: true, message: '请输入商户简称', trigger: 'blur' }],
         contactName: [{ required: true, message: '请输入联系人姓名', trigger: 'blur' }],
         isvNo: [{ validator: checkIsvNo, trigger: 'blur' }],
